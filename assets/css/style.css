@@ -1,0 +1,176 @@
+body{
+    /* background: black; */
+}
+.sideBar{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 280px;
+    background: #353747;
+    z-index: 100;
+    transition: .5s all;
+}
+.text-primary{
+    color:rgb(255, 145, 0) !important  ;
+}
+.bg-primary{
+    background:rgb(255, 145, 0) !important  ;
+}
+.mainBar{
+    
+    background: black;
+    position: absolute;
+    width: 75%;
+    left: 280px;
+    overflow: hidden;
+    background-size: cover;
+    height: 100%;
+    color: white;
+}
+a{
+    text-decoration: none !important;
+    color:white  ;
+}
+.socialBar{
+
+    position: fixed;
+    left: 48%;
+    padding-top: 1%;
+    top: 50%;
+    font-size: 27px;
+    
+    font-weight: 100;
+    width: 100%;
+    box-shadow: 0px 6px #ff8503;
+    transform: rotate(90deg);
+    height: 10%;
+    color: rgb(255, 145, 0)
+}
+.avtar{
+    background: #353747;
+    border: none;
+    border-radius: 147px;
+    margin-top: 12%;
+    
+    border-bottom: 2px solid rgb(255, 145, 0) ;
+    box-shadow: 0px 3px 8px -3px rgb(255, 145, 0) ;
+    
+}
+.avtar-div {
+    width: 141px;
+    
+}
+/* hr{
+    /* background: linear-gradient(to right, #5e42a6, #b74e91); 
+     background-color: linear-gradient(to right, #5e42a6, #b74e91);  
+} */
+
+.listItem{
+    background: #353747 !important;
+    color:white;
+    transition: .5s all;
+    border: none !important;
+    border-radius: 0px !important;
+    border-bottom: 1px solid #767786 !important; 
+    text-transform: uppercase;
+    padding-top: 10%;
+    font-size: 12px;
+    margin: 0px;
+    font-family: verdana;
+    text-align: right;
+    text-shadow: 3px 4px 6px #1d2124;
+}
+.listItem:hover{
+    cursor: pointer;
+    
+    border-right: 3px solid #007bff !important; 
+}
+.active{
+    border-right: 3px solid rgb(255, 145, 0) !important; 
+    background: #343a40 !important;
+    box-shadow: inset 0px 0px 19px -10px black;
+    
+    color: #ff8503 !important;
+    cursor: pointer;
+}
+.ion-button{
+    padding: 9px;
+    background: #35374763;
+    color: #ffffff;
+    border-left: 9px solid #ff8503;
+    border-radius: 0px;
+    transition: .7s ;
+}
+.ion-button:hover{
+    transition: .7s ;
+    color: white !important;
+    border-left: 19px solid #ff8503;
+}
+.collapse-bar{
+    display: none;
+}
+.particle-class{
+    position: absolute;
+    width: 125%;
+    height: 125%;
+}
+@media (max-width : 1100px ) {
+    .padd-0{
+        padding: 0px !important;
+    }
+    
+    .mainBar{
+        width: calc(100% - 80px);
+        left: 80px;
+    }
+    .mainBar-hidden{
+        width: calc(100% - 80px);
+        left: 80px;
+    }
+    .socialBar{
+        transform: none;
+        left: 0px;
+        top: 0px;
+        padding-right: 25px;
+        box-shadow: none;
+        font-size: 100%;
+        background: inherit !important;
+        font-weight: 100;
+        text-align: end !important;
+        width: 100%;
+        z-index: 10;
+        
+        
+    }
+    .sideBar-hidden{
+        left: -190px;
+    }
+    .avtar-div {
+        width: 81px;
+        margin-right: 5px;
+    }
+    .collapse-bar{
+        position: fixed;
+        bottom: 5%;
+        text-align: end;
+        transition: .5s all;
+        padding-right: 30px;
+        cursor: pointer;
+        display: block;
+    }
+    
+    
+    .collapse-bar:hover{
+        text-shadow: 9px 0px 0px #ff9100;
+        transition: .5s all;
+    }
+    
+}
+@media (max-width : 786px ) {
+    
+    
+}
+@media (max-width : 480px ){
+    
+}
